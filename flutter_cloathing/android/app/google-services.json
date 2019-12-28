@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "457125598076",
+    "firebase_url": "https://fluttercloathing.firebaseio.com",
+    "project_id": "fluttercloathing",
+    "storage_bucket": "fluttercloathing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457125598076:android:2aaa733aace1969a404af9",
+        "android_client_info": {
+          "package_name": "com.example.flutter_cloathing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457125598076-t8q95rsgf16o9kbfqv6hae1po3578o1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy4rlA1VsG8N6XpOP-dvEfm4eF60QCfMg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457125598076-t8q95rsgf16o9kbfqv6hae1po3578o1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
