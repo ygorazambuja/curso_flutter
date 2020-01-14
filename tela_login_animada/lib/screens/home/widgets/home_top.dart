@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'category_view.dart';
+
 class HomeTop extends StatelessWidget {
   final Animation<double> containerGrow;
 
@@ -18,7 +20,7 @@ class HomeTop extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Text(
-              'Bem Vindo Ygor',
+              'Bem Vindo, Ygor',
               style: TextStyle(
                   fontWeight: FontWeight.w300,
                   color: Colors.white,
@@ -34,22 +36,23 @@ class HomeTop extends StatelessWidget {
                       image: AssetImage('images/perfil-2.jpg'),
                       fit: BoxFit.cover)),
               child: Container(
+                alignment: Alignment.center,
                 width: containerGrow.value * 35,
                 height: containerGrow.value * 35,
                 margin: EdgeInsets.only(left: 80),
                 child: Text(
                   '2',
                   style: TextStyle(
-                      fontSize: containerGrow.value * 15,
-                      fontWeight: FontWeight.w400,
+                      fontSize: containerGrow.value * 18,
+                      fontWeight: FontWeight.bold,
                       color: Colors.white),
                 ),
                 decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: Colors.yellow,
-                ),
+                    shape: BoxShape.circle,
+                    color: Color.fromRGBO(80, 210, 194, 1.0)),
               ),
-            )
+            ),
+            CategoryView()
           ],
         ),
       ),

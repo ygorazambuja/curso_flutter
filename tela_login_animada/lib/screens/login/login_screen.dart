@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tela_login_animada/screens/home/home_screen.dart';
 import 'package:tela_login_animada/screens/login/widgets/form_container.dart';
 import 'package:tela_login_animada/screens/login/widgets/sign_up_button.dart';
 import 'package:tela_login_animada/screens/login/widgets/stagger_animation.dart';
@@ -18,6 +19,13 @@ class _LoginScreenState extends State<LoginScreen>
     super.initState();
     _animationController =
         AnimationController(vsync: this, duration: Duration(seconds: 2));
+
+    _animationController.addStatusListener((status) {
+      if (status == AnimationStatus.completed) {
+        Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (context) => HomeScreen()));
+      }
+    });
   }
 
   @override
